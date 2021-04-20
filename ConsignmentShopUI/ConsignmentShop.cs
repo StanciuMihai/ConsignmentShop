@@ -88,7 +88,7 @@ namespace ConsignmentShopUI
             }
             shoppingCartData.Clear();
             cartBinding.ResetBindings(false);
-            //MessageBox.Show("Thank you for your purchase!");
+            MessageBox.Show("Thank you for your purchase!");
         }
 
         private void undoAddToCart_Click(object sender, EventArgs e)
