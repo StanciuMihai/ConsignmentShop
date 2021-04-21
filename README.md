@@ -12,8 +12,4 @@ Requierments:
 3. Each vendor shoud have a default commission rate
 4. Commissions can change
 5. Track how much to pay the vendors
-6.Track how much to pay the store
-
-
-
-
+6. Track how much to pay the store
