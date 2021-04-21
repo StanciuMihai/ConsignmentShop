@@ -14,4 +14,3 @@ Requierments:
 4. Commissions can change
 5. Track how much to pay the vendors
 6.Track how much to pay the store
-7.
