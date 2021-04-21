@@ -17,6 +17,8 @@ namespace ConsignmentShopUI
         private List<Item> shoppingCartData = new List<Item>();
         BindingSource itemsBinding = new BindingSource();
         BindingSource cartBinding = new BindingSource();
+        BindingSource vendorsBinding = new BindingSource();
+        private decimal storeProfit = 0;
         public ConsignmentShop()
         {
             InitializeComponent();
@@ -33,6 +35,12 @@ namespace ConsignmentShopUI
 
             shoppingCartListbox.DisplayMember = "Display";
             shoppingCartListbox.ValueMember = "Display";
+
+            vendorsBinding.DataSource = store.Vendors;
+            vendorListbox.DataSource = vendorsBinding;
+
+            vendorListbox.DisplayMember = "Display";
+            vendorListbox.ValueMember = "Display";
 
         }
         private void SetupData()
@@ -85,9 +93,13 @@ namespace ConsignmentShopUI
             foreach (Item item in shoppingCartData)
             {
                 item.Sold = true;
+                item.Owner.PaymentDue += (decimal)item.Owner.Commission * item.Price;
+                storeProfit += (1 - (decimal)item.Owner.Commission) * item.Price;
             }
+            storeProfitValue.Text = string.Format("{0:C2}", storeProfit);
             shoppingCartData.Clear();
             cartBinding.ResetBindings(false);
+            vendorsBinding.ResetBindings(false);
             //MessageBox.Show("Thank you for your purchase!");
         }
 
@@ -98,6 +110,8 @@ namespace ConsignmentShopUI
             shoppingCartData.Remove(selectedItem);
             cartBinding.ResetBindings(false);
             itemsBinding.ResetBindings(false);
+           
         }
+
     }
 }
