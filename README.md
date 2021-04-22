@@ -1,7 +1,7 @@
 # ConsignmentShop
 A Consignment Shop App running on .NET Framework 4.7.2, made using c# and WinForms. Inspired from a code along video, but I decided to make it a little more functional
 
-![alt text](https://raw.githubusercontent.com/StanciuMihai/ConsignmentShop/master/preview.jpg)
+![alt text](https://raw.githubusercontent.com/StanciuMihai/ConsignmentShop/master/preview.png)
 
 Request:
 
@@ -13,5 +13,4 @@ Requierments:
 3. Each vendor shoud have a default commission rate
 4. Commissions can change
 5. Track how much to pay the vendors
-6.Track how much to pay the store
-7.
+6. Track how much to pay the store
