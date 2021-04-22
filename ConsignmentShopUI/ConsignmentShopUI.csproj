@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddItems.Designer.cs">
+      <DependentUpon>AddItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddVendors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddVendors.Designer.cs">
+      <DependentUpon>AddVendors.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConsignmentShop.cs">
       <SubType>Form</SubType>
     </Compile>
