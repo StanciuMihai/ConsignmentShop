@@ -66,6 +66,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddItems.resx">
+      <DependentUpon>AddItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddVendors.resx">
+      <DependentUpon>AddVendors.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConsignmentShop.resx">
       <DependentUpon>ConsignmentShop.cs</DependentUpon>
     </EmbeddedResource>
