@@ -118,5 +118,12 @@ namespace ConsignmentShopUI
             AddVendors addVendorsWindow = new AddVendors();
             addVendorsWindow.ShowDialog(); // Shows Form2
         }
+
+        private void addItemsButton_Click(object sender, EventArgs e)
+        {
+            AddItems addItemsWindow = new AddItems();
+            addItemsWindow.ShowDialog(); // Shows Form3
+
+        }
     }
 }
