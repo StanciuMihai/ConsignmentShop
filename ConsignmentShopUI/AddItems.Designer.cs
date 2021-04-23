@@ -37,8 +37,8 @@ namespace ConsignmentShopUI
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.AddItemButton = new System.Windows.Forms.Button();
+            this.closeAddItemsWindowButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -107,31 +107,32 @@ namespace ConsignmentShopUI
             this.comboBox1.Size = new System.Drawing.Size(121, 28);
             this.comboBox1.TabIndex = 7;
             // 
-            // button1
+            // AddItemButton
             // 
-            this.button1.Location = new System.Drawing.Point(195, 237);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 51);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Add Item";
-            this.button1.UseVisualStyleBackColor = true;
+            this.AddItemButton.Location = new System.Drawing.Point(195, 237);
+            this.AddItemButton.Name = "AddItemButton";
+            this.AddItemButton.Size = new System.Drawing.Size(90, 51);
+            this.AddItemButton.TabIndex = 8;
+            this.AddItemButton.Text = "Add Item";
+            this.AddItemButton.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // closeAddItemsWindowButton
             // 
-            this.button2.Location = new System.Drawing.Point(336, 237);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(90, 51);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Cancel";
-            this.button2.UseVisualStyleBackColor = true;
+            this.closeAddItemsWindowButton.Location = new System.Drawing.Point(336, 237);
+            this.closeAddItemsWindowButton.Name = "closeAddItemsWindowButton";
+            this.closeAddItemsWindowButton.Size = new System.Drawing.Size(90, 51);
+            this.closeAddItemsWindowButton.TabIndex = 9;
+            this.closeAddItemsWindowButton.Text = "Close";
+            this.closeAddItemsWindowButton.UseVisualStyleBackColor = true;
+            this.closeAddItemsWindowButton.Click += new System.EventHandler(this.closeAddItemsWindowButton_Click);
             // 
             // AddItems
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(732, 326);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.closeAddItemsWindowButton);
+            this.Controls.Add(this.AddItemButton);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -159,7 +160,7 @@ namespace ConsignmentShopUI
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button AddItemButton;
+        private System.Windows.Forms.Button closeAddItemsWindowButton;
     }
 }
