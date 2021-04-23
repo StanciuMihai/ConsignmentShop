@@ -32,13 +32,11 @@ namespace ConsignmentShopUI
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.addNewVendorButton = new System.Windows.Forms.Button();
+            this.closeAddVendorButton = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -54,7 +52,7 @@ namespace ConsignmentShopUI
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(77, 90);
+            this.label2.Location = new System.Drawing.Point(77, 96);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 20);
@@ -64,40 +62,31 @@ namespace ConsignmentShopUI
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(77, 138);
+            this.label3.Location = new System.Drawing.Point(33, 144);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 20);
+            this.label3.Size = new System.Drawing.Size(168, 20);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Commission";
+            this.label3.Text = "Commission (Optional)";
             // 
-            // label4
+            // addNewVendorButton
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(77, 188);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 20);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Payment Due";
+            this.addNewVendorButton.Location = new System.Drawing.Point(208, 254);
+            this.addNewVendorButton.Name = "addNewVendorButton";
+            this.addNewVendorButton.Size = new System.Drawing.Size(79, 48);
+            this.addNewVendorButton.TabIndex = 4;
+            this.addNewVendorButton.Text = "Add Vendor";
+            this.addNewVendorButton.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // closeAddVendorButton
             // 
-            this.button1.Location = new System.Drawing.Point(208, 254);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(79, 48);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Add Vendor";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(371, 254);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(79, 48);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Cancel";
-            this.button2.UseVisualStyleBackColor = true;
+            this.closeAddVendorButton.Location = new System.Drawing.Point(371, 254);
+            this.closeAddVendorButton.Name = "closeAddVendorButton";
+            this.closeAddVendorButton.Size = new System.Drawing.Size(79, 48);
+            this.closeAddVendorButton.TabIndex = 5;
+            this.closeAddVendorButton.Text = "Cancel";
+            this.closeAddVendorButton.UseVisualStyleBackColor = true;
+            this.closeAddVendorButton.Click += new System.EventHandler(this.closeAddVendorButton_Click);
             // 
             // textBox1
             // 
@@ -120,25 +109,16 @@ namespace ConsignmentShopUI
             this.textBox3.Size = new System.Drawing.Size(242, 26);
             this.textBox3.TabIndex = 8;
             // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(208, 185);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(242, 26);
-            this.textBox4.TabIndex = 9;
-            // 
             // AddVendors
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(666, 314);
-            this.Controls.Add(this.textBox4);
+            this.ClientSize = new System.Drawing.Size(682, 332);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.closeAddVendorButton);
+            this.Controls.Add(this.addNewVendorButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -156,12 +136,10 @@ namespace ConsignmentShopUI
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button addNewVendorButton;
+        private System.Windows.Forms.Button closeAddVendorButton;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
     }
 }

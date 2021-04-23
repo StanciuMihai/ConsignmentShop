@@ -16,5 +16,10 @@ namespace ConsignmentShopUI
         {
             InitializeComponent();
         }
+
+        private void closeAddVendorButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

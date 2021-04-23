@@ -170,6 +170,7 @@ namespace ConsignmentShopUI
             this.addVendorsButton.TabIndex = 12;
             this.addVendorsButton.Text = "Add Vendors";
             this.addVendorsButton.UseVisualStyleBackColor = true;
+            this.addVendorsButton.Click += new System.EventHandler(this.addVendorsButton_Click);
             // 
             // addItemsButton
             // 
