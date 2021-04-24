@@ -206,6 +206,7 @@ namespace ConsignmentShopUI
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ConsignmentShop";
             this.Text = "Consignment Shop";
+            this.Activated += new System.EventHandler(this.ConsignmentShop_Activated);
             this.ResumeLayout(false);
             this.PerformLayout();
 

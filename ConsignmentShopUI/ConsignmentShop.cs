@@ -13,8 +13,8 @@ namespace ConsignmentShopUI
 {
     public partial class ConsignmentShop : Form
     {
-        private Store store = new Store();
-        private List<Item> shoppingCartData = new List<Item>();
+        public Store store = new Store();
+        public List<Item> shoppingCartData = new List<Item>();
         BindingSource itemsBinding = new BindingSource();
         BindingSource cartBinding = new BindingSource();
         BindingSource vendorsBinding = new BindingSource();
@@ -124,6 +124,13 @@ namespace ConsignmentShopUI
             AddItems addItemsWindow = new AddItems();
             addItemsWindow.ShowDialog(); // Shows Form3
 
+        }
+
+        private void ConsignmentShop_Activated(object sender, EventArgs e)
+        {
+            cartBinding.ResetBindings(false);
+            vendorsBinding.ResetBindings(false);
+            itemsBinding.ResetBindings(false);
         }
     }
 }

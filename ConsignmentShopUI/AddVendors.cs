@@ -13,6 +13,7 @@ namespace ConsignmentShopUI
 {
     public partial class AddVendors : Form
     {
+        public Store store = new Store();
         public string vendorFirstname;
         public string vendorLastName;
         public string vendorCommission;
@@ -38,6 +39,13 @@ namespace ConsignmentShopUI
             }
             else
             {
+                if (vendorCommission== "")
+                {
+                    store.Vendors.Add(new Vendor { FirstName = vendorFirstname, LastName = vendorLastName });
+                    MessageBox.Show("New vendor successfully added!");
+
+                }
+               
 
             }
 
