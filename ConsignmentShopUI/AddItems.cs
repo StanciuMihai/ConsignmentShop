@@ -12,6 +12,8 @@ namespace ConsignmentShopUI
 {
     public partial class AddItems : Form
     {
+        
+
         public AddItems()
         {
             InitializeComponent();
@@ -20,6 +22,11 @@ namespace ConsignmentShopUI
         private void closeAddItemsWindowButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void AddItemButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

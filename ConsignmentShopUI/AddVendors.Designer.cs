@@ -34,15 +34,15 @@ namespace ConsignmentShopUI
             this.label3 = new System.Windows.Forms.Label();
             this.addNewVendorButton = new System.Windows.Forms.Button();
             this.closeAddVendorButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.firstNameBox = new System.Windows.Forms.TextBox();
+            this.lastNameBox = new System.Windows.Forms.TextBox();
+            this.commissionBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(77, 45);
+            this.label1.Location = new System.Drawing.Point(115, 45);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 20);
@@ -52,7 +52,7 @@ namespace ConsignmentShopUI
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(77, 96);
+            this.label2.Location = new System.Drawing.Point(115, 96);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 20);
@@ -62,12 +62,12 @@ namespace ConsignmentShopUI
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(33, 144);
+            this.label3.Location = new System.Drawing.Point(15, 144);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(168, 20);
+            this.label3.Size = new System.Drawing.Size(186, 20);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Commission (Optional)";
+            this.label3.Text = "Commission (Optional) %";
             // 
             // addNewVendorButton
             // 
@@ -77,6 +77,7 @@ namespace ConsignmentShopUI
             this.addNewVendorButton.TabIndex = 4;
             this.addNewVendorButton.Text = "Add Vendor";
             this.addNewVendorButton.UseVisualStyleBackColor = true;
+            this.addNewVendorButton.Click += new System.EventHandler(this.addNewVendorButton_Click);
             // 
             // closeAddVendorButton
             // 
@@ -88,35 +89,35 @@ namespace ConsignmentShopUI
             this.closeAddVendorButton.UseVisualStyleBackColor = true;
             this.closeAddVendorButton.Click += new System.EventHandler(this.closeAddVendorButton_Click);
             // 
-            // textBox1
+            // firstNameBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(208, 39);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(242, 26);
-            this.textBox1.TabIndex = 6;
+            this.firstNameBox.Location = new System.Drawing.Point(208, 39);
+            this.firstNameBox.Name = "firstNameBox";
+            this.firstNameBox.Size = new System.Drawing.Size(242, 26);
+            this.firstNameBox.TabIndex = 6;
             // 
-            // textBox2
+            // lastNameBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(208, 90);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(242, 26);
-            this.textBox2.TabIndex = 7;
+            this.lastNameBox.Location = new System.Drawing.Point(208, 90);
+            this.lastNameBox.Name = "lastNameBox";
+            this.lastNameBox.Size = new System.Drawing.Size(242, 26);
+            this.lastNameBox.TabIndex = 7;
             // 
-            // textBox3
+            // commissionBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(208, 138);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(242, 26);
-            this.textBox3.TabIndex = 8;
+            this.commissionBox.Location = new System.Drawing.Point(208, 138);
+            this.commissionBox.Name = "commissionBox";
+            this.commissionBox.Size = new System.Drawing.Size(242, 26);
+            this.commissionBox.TabIndex = 8;
             // 
             // AddVendors
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(682, 332);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.commissionBox);
+            this.Controls.Add(this.lastNameBox);
+            this.Controls.Add(this.firstNameBox);
             this.Controls.Add(this.closeAddVendorButton);
             this.Controls.Add(this.addNewVendorButton);
             this.Controls.Add(this.label3);
@@ -138,8 +139,8 @@ namespace ConsignmentShopUI
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button addNewVendorButton;
         private System.Windows.Forms.Button closeAddVendorButton;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox firstNameBox;
+        private System.Windows.Forms.TextBox lastNameBox;
+        private System.Windows.Forms.TextBox commissionBox;
     }
 }

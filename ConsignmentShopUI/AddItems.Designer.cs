@@ -115,6 +115,7 @@ namespace ConsignmentShopUI
             this.AddItemButton.TabIndex = 8;
             this.AddItemButton.Text = "Add Item";
             this.AddItemButton.UseVisualStyleBackColor = true;
+            this.AddItemButton.Click += new System.EventHandler(this.AddItemButton_Click);
             // 
             // closeAddItemsWindowButton
             // 
