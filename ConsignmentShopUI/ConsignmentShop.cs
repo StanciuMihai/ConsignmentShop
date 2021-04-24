@@ -15,9 +15,9 @@ namespace ConsignmentShopUI
     {
         public Store store = new Store();
         public List<Item> shoppingCartData = new List<Item>();
-        BindingSource itemsBinding = new BindingSource();
-        BindingSource cartBinding = new BindingSource();
-        BindingSource vendorsBinding = new BindingSource();
+        public BindingSource itemsBinding = new BindingSource();
+        public BindingSource cartBinding = new BindingSource();
+        public BindingSource vendorsBinding = new BindingSource();
         private decimal storeProfit = 0;
         public ConsignmentShop()
         {
