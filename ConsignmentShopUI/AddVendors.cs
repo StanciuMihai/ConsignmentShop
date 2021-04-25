@@ -13,7 +13,7 @@ namespace ConsignmentShopUI
 {
     public partial class AddVendors : Form
     {
-        ConsignmentShop form1 = new ConsignmentShop();
+        
         public string vendorFirstname;
         public string vendorLastName;
         public string vendorCommission;
@@ -45,7 +45,7 @@ namespace ConsignmentShopUI
             {
                 if (vendorCommission== "")
                 {
-                    form1.store.Vendors.Add(new Vendor { FirstName = "Bill", LastName = "Smith" });
+                    
 
 
 

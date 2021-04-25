@@ -13,12 +13,16 @@ namespace ConsignmentShopUI
 {
     public partial class ConsignmentShop : Form
     {
-        public Store store = new Store();
-        public List<Item> shoppingCartData = new List<Item>();
-        public BindingSource itemsBinding = new BindingSource();
-        public BindingSource cartBinding = new BindingSource();
-        public BindingSource vendorsBinding = new BindingSource();
+        Store store = new Store();
+        List<Item> shoppingCartData = new List<Item>();
+        BindingSource itemsBinding = new BindingSource();
+        BindingSource cartBinding = new BindingSource();
+        BindingSource vendorsBinding = new BindingSource();
         private decimal storeProfit = 0;
+        string vendorFirstName ="";
+        string vendorLastName = "";
+        string vendorCommission = "";
+
         public ConsignmentShop()
         {
             InitializeComponent();
@@ -116,7 +120,13 @@ namespace ConsignmentShopUI
         private void addVendorsButton_Click(object sender, EventArgs e)
         {
             AddVendors addVendorsWindow = new AddVendors();
-            addVendorsWindow.ShowDialog(); // Shows Form2
+           if( addVendorsWindow.ShowDialog()== System.Windows.Forms.DialogResult.OK )
+           {
+                addVendorsWindow
+                addVendorsWindow
+                addVendorsWindow
+
+           }
         }
 
         private void addItemsButton_Click(object sender, EventArgs e)

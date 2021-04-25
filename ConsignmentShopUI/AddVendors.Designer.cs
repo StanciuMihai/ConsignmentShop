@@ -71,6 +71,7 @@ namespace ConsignmentShopUI
             // 
             // addNewVendorButton
             // 
+            this.addNewVendorButton.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.addNewVendorButton.Location = new System.Drawing.Point(208, 254);
             this.addNewVendorButton.Name = "addNewVendorButton";
             this.addNewVendorButton.Size = new System.Drawing.Size(79, 48);
@@ -109,6 +110,7 @@ namespace ConsignmentShopUI
             this.commissionBox.Name = "commissionBox";
             this.commissionBox.Size = new System.Drawing.Size(242, 26);
             this.commissionBox.TabIndex = 8;
+            this.commissionBox.Text = "50";
             // 
             // AddVendors
             // 
@@ -124,7 +126,10 @@ namespace ConsignmentShopUI
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "AddVendors";
             this.Text = "AddVendors";
             this.ResumeLayout(false);
