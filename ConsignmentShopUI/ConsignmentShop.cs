@@ -136,7 +136,10 @@ namespace ConsignmentShopUI
         private void addItemsButton_Click(object sender, EventArgs e)
         {
             AddItems addItemsWindow = new AddItems();
-            addItemsWindow.ShowDialog(); // Shows Form3
+            if (addItemsWindow.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+
+            }
 
         }
 
