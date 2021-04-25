@@ -19,7 +19,7 @@ namespace ConsignmentShopLibrary
         {
             get
             {
-                return string.Format("{0} {1} - {2:C2}", FirstName, LastName, PaymentDue);
+                return string.Format("{0} {1}, {2:P},  {3:C2}", FirstName, LastName,Commission, PaymentDue);
             }
         }
         public Vendor()

@@ -62,16 +62,15 @@ namespace ConsignmentShopUI
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 144);
+            this.label3.Location = new System.Drawing.Point(88, 144);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(186, 20);
+            this.label3.Size = new System.Drawing.Size(113, 20);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Commission (Optional) %";
+            this.label3.Text = "Commission %";
             // 
             // addNewVendorButton
             // 
-            this.addNewVendorButton.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.addNewVendorButton.Location = new System.Drawing.Point(208, 254);
             this.addNewVendorButton.Name = "addNewVendorButton";
             this.addNewVendorButton.Size = new System.Drawing.Size(79, 48);
@@ -110,7 +109,7 @@ namespace ConsignmentShopUI
             this.commissionBox.Name = "commissionBox";
             this.commissionBox.Size = new System.Drawing.Size(242, 26);
             this.commissionBox.TabIndex = 8;
-            this.commissionBox.Text = "50";
+            this.commissionBox.Text = ".50";
             // 
             // AddVendors
             // 

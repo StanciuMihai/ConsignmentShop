@@ -49,8 +49,8 @@ namespace ConsignmentShopUI
         }
         private void SetupData()
         {
-            store.Vendors.Add(new Vendor { FirstName = "Bill", LastName = "Smith" });
-            store.Vendors.Add(new Vendor { FirstName = "Sue", LastName = "Jones" });
+            store.Vendors.Add(new Vendor { FirstName = "Bill", LastName = "Smith", Commission=.50 });
+            store.Vendors.Add(new Vendor { FirstName = "Sue", LastName = "Jones", Commission=.50 });
 
 
             store.Items.Add(new Item
@@ -122,11 +122,15 @@ namespace ConsignmentShopUI
             AddVendors addVendorsWindow = new AddVendors();
            if( addVendorsWindow.ShowDialog()== System.Windows.Forms.DialogResult.OK )
            {
-                addVendorsWindow
-                addVendorsWindow
-                addVendorsWindow
+                vendorFirstName = addVendorsWindow.vendorFirstName;
+                vendorLastName = addVendorsWindow.vendorLastName;
+                vendorCommission = addVendorsWindow.vendorCommission;
+                store.Vendors.Add(new Vendor { FirstName = vendorFirstName, LastName = vendorLastName, Commission= float.Parse(vendorCommission) });
+                cartBinding.ResetBindings(false);
+                vendorsBinding.ResetBindings(false);
+                itemsBinding.ResetBindings(false);
 
-           }
+            }
         }
 
         private void addItemsButton_Click(object sender, EventArgs e)

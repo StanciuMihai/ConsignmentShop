@@ -14,7 +14,7 @@ namespace ConsignmentShopUI
     public partial class AddVendors : Form
     {
         
-        public string vendorFirstname;
+        public string vendorFirstName;
         public string vendorLastName;
         public string vendorCommission;
         public AddVendors()
@@ -27,31 +27,25 @@ namespace ConsignmentShopUI
 
         private void closeAddVendorButton_Click(object sender, EventArgs e)
         {
+            this.DialogResult = DialogResult.Cancel;
             this.Close();
         }
 
         private void addNewVendorButton_Click(object sender, EventArgs e)
         {
-            vendorFirstname = firstNameBox.Text;
+            vendorFirstName = firstNameBox.Text;
             vendorLastName = lastNameBox.Text;
             vendorCommission = commissionBox.Text;
-            
 
-            if (vendorFirstname == "" || vendorLastName == "")
+
+            if (vendorFirstName == "" || vendorLastName == "" || vendorCommission=="")
             {
                 MessageBox.Show("Please enter the required fields before adding a new vendor!");
             }
             else
             {
-                if (vendorCommission== "")
-                {
-                    
-
-
-
-                }
-               
-
+                this.DialogResult = DialogResult.OK;
+                this.Close();
             }
 
         }
