@@ -106,6 +106,7 @@ namespace ConsignmentShopUI
             this.vendorComboBox.Name = "vendorComboBox";
             this.vendorComboBox.Size = new System.Drawing.Size(231, 28);
             this.vendorComboBox.TabIndex = 7;
+            this.vendorComboBox.SelectedIndexChanged += new System.EventHandler(this.vendorComboBox_SelectedIndexChanged);
             // 
             // AddItemButton
             // 

@@ -25,6 +25,7 @@ namespace ConsignmentShopUI
         string itemDescription;
         string price;
         string owner;
+        int vendorindex;
         public void AddToCombo(Array array, ComboBox c)
         {
             foreach (var a in array)
@@ -39,7 +40,23 @@ namespace ConsignmentShopUI
 
         private void AddItemButton_Click(object sender, EventArgs e)
         {
-            
+            itemTitle = titleTextBox.Text;
+            itemDescription = descriptionTextBox.Text;
+            price = priceTextBox.Text;
+
+            if (itemTitle == "" || itemDescription == "" || price == "" || vendorComboBox.SelectedItem == null)
+            {
+                MessageBox.Show("Please enter the required fields before adding a new item!");
+
+            }
+            else 
+            {
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
+
+
+
         }
 
         private void AddItems_Load(object sender, EventArgs e)
@@ -50,6 +67,14 @@ namespace ConsignmentShopUI
                 string ven = vendor.FirstName + " " + vendor.LastName;
                 vendorComboBox.Items.Add(ven);
             }
+        }
+
+        private void vendorComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            vendorindex = vendorComboBox.SelectedIndex;
+           
+
+            
         }
     }
 }
