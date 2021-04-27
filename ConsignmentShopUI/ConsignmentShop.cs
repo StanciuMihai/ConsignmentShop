@@ -13,7 +13,8 @@ namespace ConsignmentShopUI
 {
     public partial class ConsignmentShop : Form
     {
-        public Store store = new Store();
+       
+        public static Store store = new Store();
         List<Item> shoppingCartData = new List<Item>();
         BindingSource itemsBinding = new BindingSource();
         BindingSource cartBinding = new BindingSource();
@@ -22,6 +23,7 @@ namespace ConsignmentShopUI
         string vendorFirstName ="";
         string vendorLastName = "";
         string vendorCommission = "";
+        
 
         public ConsignmentShop()
         {
@@ -82,6 +84,7 @@ namespace ConsignmentShopUI
             });
             store.Name = "Seconds are Better";
         }
+        
 
         private void addToCart_Click(object sender, EventArgs e)
         {
