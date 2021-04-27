@@ -33,10 +33,10 @@ namespace ConsignmentShopUI
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.titleTextBox = new System.Windows.Forms.TextBox();
+            this.descriptionTextBox = new System.Windows.Forms.TextBox();
+            this.priceTextBox = new System.Windows.Forms.TextBox();
+            this.vendorComboBox = new System.Windows.Forms.ComboBox();
             this.AddItemButton = new System.Windows.Forms.Button();
             this.closeAddItemsWindowButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -77,35 +77,35 @@ namespace ConsignmentShopUI
             this.label4.TabIndex = 3;
             this.label4.Text = "Vendor";
             // 
-            // textBox1
+            // titleTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(195, 40);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(231, 26);
-            this.textBox1.TabIndex = 4;
+            this.titleTextBox.Location = new System.Drawing.Point(195, 40);
+            this.titleTextBox.Name = "titleTextBox";
+            this.titleTextBox.Size = new System.Drawing.Size(231, 26);
+            this.titleTextBox.TabIndex = 4;
             // 
-            // textBox2
+            // descriptionTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(195, 81);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(231, 56);
-            this.textBox2.TabIndex = 5;
+            this.descriptionTextBox.Location = new System.Drawing.Point(195, 81);
+            this.descriptionTextBox.Multiline = true;
+            this.descriptionTextBox.Name = "descriptionTextBox";
+            this.descriptionTextBox.Size = new System.Drawing.Size(231, 56);
+            this.descriptionTextBox.TabIndex = 5;
             // 
-            // textBox3
+            // priceTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(195, 143);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(64, 26);
-            this.textBox3.TabIndex = 6;
+            this.priceTextBox.Location = new System.Drawing.Point(195, 143);
+            this.priceTextBox.Name = "priceTextBox";
+            this.priceTextBox.Size = new System.Drawing.Size(64, 26);
+            this.priceTextBox.TabIndex = 6;
             // 
-            // comboBox1
+            // vendorComboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(195, 175);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 28);
-            this.comboBox1.TabIndex = 7;
+            this.vendorComboBox.FormattingEnabled = true;
+            this.vendorComboBox.Location = new System.Drawing.Point(195, 175);
+            this.vendorComboBox.Name = "vendorComboBox";
+            this.vendorComboBox.Size = new System.Drawing.Size(121, 28);
+            this.vendorComboBox.TabIndex = 7;
             // 
             // AddItemButton
             // 
@@ -134,10 +134,10 @@ namespace ConsignmentShopUI
             this.ClientSize = new System.Drawing.Size(732, 326);
             this.Controls.Add(this.closeAddItemsWindowButton);
             this.Controls.Add(this.AddItemButton);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.vendorComboBox);
+            this.Controls.Add(this.priceTextBox);
+            this.Controls.Add(this.descriptionTextBox);
+            this.Controls.Add(this.titleTextBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -149,6 +149,7 @@ namespace ConsignmentShopUI
             this.MinimizeBox = false;
             this.Name = "AddItems";
             this.Text = "AddItems";
+            this.Load += new System.EventHandler(this.AddItems_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,10 +161,10 @@ namespace ConsignmentShopUI
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox titleTextBox;
+        private System.Windows.Forms.TextBox descriptionTextBox;
+        private System.Windows.Forms.TextBox priceTextBox;
+        private System.Windows.Forms.ComboBox vendorComboBox;
         private System.Windows.Forms.Button AddItemButton;
         private System.Windows.Forms.Button closeAddItemsWindowButton;
     }

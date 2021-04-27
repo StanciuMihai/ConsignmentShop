@@ -13,7 +13,7 @@ namespace ConsignmentShopUI
 {
     public partial class ConsignmentShop : Form
     {
-        Store store = new Store();
+        public Store store = new Store();
         List<Item> shoppingCartData = new List<Item>();
         BindingSource itemsBinding = new BindingSource();
         BindingSource cartBinding = new BindingSource();
