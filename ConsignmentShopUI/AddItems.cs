@@ -21,18 +21,11 @@ namespace ConsignmentShopUI
 
         }
         
-        string itemTitle;
-        string itemDescription;
-        string price;
-        string owner;
-        int vendorindex;
-        public void AddToCombo(Array array, ComboBox c)
-        {
-            foreach (var a in array)
-            {
-                c.Items.Add(a);
-            }
-        }
+       public string itemTitle;
+       public string itemDescription;
+       public string itemPrice;
+       public int vendorindex;
+       
         private void closeAddItemsWindowButton_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -42,9 +35,9 @@ namespace ConsignmentShopUI
         {
             itemTitle = titleTextBox.Text;
             itemDescription = descriptionTextBox.Text;
-            price = priceTextBox.Text;
+            itemPrice = priceTextBox.Text;
 
-            if (itemTitle == "" || itemDescription == "" || price == "" || vendorComboBox.SelectedItem == null)
+            if (itemTitle == "" || itemDescription == "" || itemPrice == "" || vendorComboBox.SelectedItem == null)
             {
                 MessageBox.Show("Please enter the required fields before adding a new item!");
 

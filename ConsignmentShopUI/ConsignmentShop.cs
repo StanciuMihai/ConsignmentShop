@@ -23,6 +23,10 @@ namespace ConsignmentShopUI
         string vendorFirstName ="";
         string vendorLastName = "";
         string vendorCommission = "";
+        string itemTitle;
+        string itemDescription;
+        decimal itemPrice;
+        int itemOwner;
         
 
         public ConsignmentShop()
@@ -144,7 +148,14 @@ namespace ConsignmentShopUI
             AddItems addItemsWindow = new AddItems();
             if (addItemsWindow.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-
+                itemTitle = addItemsWindow.itemTitle;
+                itemDescription = addItemsWindow.itemDescription;
+                itemPrice = decimal.Parse(addItemsWindow.itemPrice);
+                itemOwner = addItemsWindow.vendorindex;
+                store.Items.Add(new Item { Title = itemTitle, Description = itemDescription, Price = itemPrice, Owner = store.Vendors[itemOwner] });
+                cartBinding.ResetBindings(false);
+                vendorsBinding.ResetBindings(false);
+                itemsBinding.ResetBindings(false);
             }
 
         }
