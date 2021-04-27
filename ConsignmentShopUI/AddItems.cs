@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsignmentShopLibrary;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +20,10 @@ namespace ConsignmentShopUI
             InitializeComponent();
         }
 
+        string itemTitle;
+        string itemDescription;
+        string price;
+        string 
         private void closeAddItemsWindowButton_Click(object sender, EventArgs e)
         {
             this.Close();
