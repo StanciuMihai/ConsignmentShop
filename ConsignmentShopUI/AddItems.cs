@@ -47,7 +47,8 @@ namespace ConsignmentShopUI
             ConsignmentShop cs = new ConsignmentShop();
             foreach (Vendor vendor in cs.store.Vendors)
             {
-                vendorComboBox.Items.Add(vendor.FirstName);
+                string ven = vendor.FirstName + " " + vendor.LastName;
+                vendorComboBox.Items.Add(ven);
             }
         }
     }
