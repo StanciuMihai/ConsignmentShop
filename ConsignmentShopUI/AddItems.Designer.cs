@@ -124,7 +124,7 @@ namespace ConsignmentShopUI
             this.closeAddItemsWindowButton.Name = "closeAddItemsWindowButton";
             this.closeAddItemsWindowButton.Size = new System.Drawing.Size(90, 51);
             this.closeAddItemsWindowButton.TabIndex = 9;
-            this.closeAddItemsWindowButton.Text = "Close";
+            this.closeAddItemsWindowButton.Text = "Cancel";
             this.closeAddItemsWindowButton.UseVisualStyleBackColor = true;
             this.closeAddItemsWindowButton.Click += new System.EventHandler(this.closeAddItemsWindowButton_Click);
             // 
@@ -132,7 +132,7 @@ namespace ConsignmentShopUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(732, 326);
+            this.ClientSize = new System.Drawing.Size(595, 317);
             this.Controls.Add(this.closeAddItemsWindowButton);
             this.Controls.Add(this.AddItemButton);
             this.Controls.Add(this.vendorComboBox);

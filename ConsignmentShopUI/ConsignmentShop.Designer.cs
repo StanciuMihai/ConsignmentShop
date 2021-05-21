@@ -214,6 +214,7 @@ namespace ConsignmentShopUI
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MinimumSize = new System.Drawing.Size(877, 599);
             this.Name = "ConsignmentShop";
             this.Text = "Consignment Shop";
             this.Activated += new System.EventHandler(this.ConsignmentShop_Activated);
