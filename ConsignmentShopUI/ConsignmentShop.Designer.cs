@@ -29,6 +29,7 @@ namespace ConsignmentShopUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsignmentShop));
             this.headerText = new System.Windows.Forms.Label();
             this.itemsListbox = new System.Windows.Forms.ListBox();
             this.itemsListboxLabel = new System.Windows.Forms.Label();
@@ -43,6 +44,8 @@ namespace ConsignmentShopUI
             this.storeProfitValue = new System.Windows.Forms.Label();
             this.addVendorsButton = new System.Windows.Forms.Button();
             this.addItemsButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // headerText
@@ -192,11 +195,22 @@ namespace ConsignmentShopUI
             this.addItemsButton.UseVisualStyleBackColor = true;
             this.addItemsButton.Click += new System.EventHandler(this.addItemsButton_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(321, -5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(99, 82);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            // 
             // ConsignmentShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(861, 560);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.addItemsButton);
             this.Controls.Add(this.addVendorsButton);
             this.Controls.Add(this.storeProfitValue);
@@ -218,6 +232,7 @@ namespace ConsignmentShopUI
             this.Name = "ConsignmentShop";
             this.Text = "Consignment Shop";
             this.Activated += new System.EventHandler(this.ConsignmentShop_Activated);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -239,6 +254,7 @@ namespace ConsignmentShopUI
         private System.Windows.Forms.Label storeProfitValue;
         private System.Windows.Forms.Button addVendorsButton;
         private System.Windows.Forms.Button addItemsButton;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
