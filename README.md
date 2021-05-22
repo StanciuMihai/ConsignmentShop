@@ -4,7 +4,7 @@ A Consignment Shop App running on .NET Framework 4.7.2, made using c# and WinFor
 ![alt text](https://raw.githubusercontent.com/StanciuMihai/ConsignmentShop/master/preview.png)
 
 
-# Update! Added a suggestive logo and responsive design elements!
+** Update! Added a suggestive logo and responsive design elements! **
 
 ![alt text](https://raw.githubusercontent.com/StanciuMihai/ConsignmentShop/master/preview2.png)
 
