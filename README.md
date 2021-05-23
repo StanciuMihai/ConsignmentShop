@@ -3,6 +3,12 @@ A Consignment Shop App running on .NET Framework 4.7.2, made using c# and WinFor
 
 ![alt text](https://raw.githubusercontent.com/StanciuMihai/ConsignmentShop/master/preview.png)
 
+
+**Update! Added a suggestive logo and responsive design elements!**
+
+![alt text](https://raw.githubusercontent.com/StanciuMihai/ConsignmentShop/master/preview2.png)
+
+
 Request:
 
 Create an application that can be used by consignment shops to run their business. You need to know who the vendors are who have items in the shop and you need to associate these vendors with their items. Each vendor shoud be assigned a standard comission, but that may need to be changed on a per-vendor basis. The application shoud track how much should be paid to each vendor as well as how much money shoud be paid to the store.
